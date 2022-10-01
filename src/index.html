@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+ 
+</head>
+
+<body onload=(ballBaouncing())>
+   
+<div class="w-full h-full">
+    <canvas style="position: absolute; z-index: 0; border: 0ch;"></canvas>
+    <img src="./Facebook Post 940x788 px.png" class="w-[30vh] xl:block z-10 hidden absolute top-[-3rem] left-[42%] bounce-in-top" alt="">
+    <div id="form" class="bg-fuchsia-300 opacity-50 absolute flex align-middle justify-center flex-col top-[5vh] xl:left-[30%] pt-28 w-[70vh] h-[70vh] rounded-full pr-32 pl-20 m-10 shadow-m  left-[5%] md:left-[24%] px-8 pb-8 mb-4 bounce-in-top">
+    <form class="">
+        <div class="mb-4 w-full flex align-middle ml-24">
+            <label class="block text-white text-sm font-bold mb-7" for="username">
+                Sign Up
+            </label>
+            </div>
+            <div class="mb-4 w-full  flex align-middle justify-center">
+            <input
+                class="appearance-none opacity-80 bg-slate-100 rounded-full ml-10 w-[30vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="username" type="text" placeholder="Username">
+    </div>
+    <div class="mb-4 w-full  flex align-middle justify-center">
+    
+        <input
+            class="border opacity-80  bg-slate-100 rounded-full ml-10 w-[30vh] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="Passsword" type="password" placeholder="Password">
+    </div>
+        <div class="mb-4 w-full  flex align-middle justify-center">
+          
+            <input
+                class="border opacity-80  bg-slate-100 rounded-full w-[30vh] ml-10 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="confirmPassword" type="password" placeholder="Confirm Password">
+        </div>
+        <div class="flex items-center w-full  justify-center">
+            <button onclick=(submit())
+                class=" bg-slate-100 opacity-80 text-black ml-10 py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+                type="button">
+                Sign Up
+            </button>
+           
+        </div>
+        <div class="mb-4 w-full pt-12  flex align-middle justify-center">
+            <a href="/" class="text-white">I have acount?</a><a class="text-black" href="/">sign in</a>
+        </div>
+    </form>
+    </div>
+<div class="w-[20rem] h-[20rem] absolute rounded-br-full bg-teal-100 hidden xl:block"></div>
+<div class="w-[8rem] h-[25rem] absolute bottom-0 right-0 bottom-div hidden xl:block"></div>
+
+   
+
+
+
+</div>
+
+
+
+</body>
+<script src="./index.js"></script>
+
+</html>
